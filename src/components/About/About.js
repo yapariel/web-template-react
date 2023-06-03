@@ -1,11 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
+import "./About.css";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About";
+  }, []);
+
   return (
-    <div>
+    <div className="centered-container">
       <Navbar />
-      <h2>About</h2>
+      <h2>ABOUT</h2>
+      <Footer />
     </div>
   );
 };
