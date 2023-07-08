@@ -27,6 +27,24 @@
   text-align: center;
 }
 
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 1.5rem;
+}
+
+.footer-social {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin-right: 3rem;
+}
+.fb-icon {
+  margin-right: 1rem;
+}
+
 /* FOR RESPONSIVE */
 
 @media screen and (max-width: 1024px) {

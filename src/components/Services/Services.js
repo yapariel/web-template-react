@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "./Services.css";
+import { Container } from "react-bootstrap";
 
 const Services = () => {
   useEffect(() => {
@@ -10,11 +11,11 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="centered-container">
+    <Container className="centered-container">
       <Navbar />
       <h2>SERVICES</h2>
       <Footer />
-    </div>
+    </Container>
   );
 };
 

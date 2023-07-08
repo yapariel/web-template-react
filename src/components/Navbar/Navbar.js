@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
 import logo from "../../Assets/Images/logo2.png";
+import { Container, Col, Row } from "react-bootstrap";
 
 function Navbar() {
   const [click, setClick] = React.useState(false);
@@ -13,16 +14,16 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className="navbar">
-          <div className="navbar-container container">
+        <Container className="navbar">
+          <Row className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               <img src={logo} className="nav_logo-img" />
               TEMPLATE.
             </Link>
 
-            <div className="menu-icon" onClick={handleClick}>
+            <Col className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
-            </div>
+            </Col>
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
@@ -61,8 +62,8 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
+          </Row>
+        </Container>
       </IconContext.Provider>
     </>
   );

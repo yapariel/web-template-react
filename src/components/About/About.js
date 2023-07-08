@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
 import "./About.css";
+import { Container } from "react-bootstrap";
 
 const About = () => {
   useEffect(() => {
@@ -11,11 +12,11 @@ const About = () => {
   }, []);
 
   return (
-    <div className="centered-container">
+    <Container className="centered-container">
       <Navbar />
       <h2>ABOUT</h2>
       <Footer />
-    </div>
+    </Container>
   );
 };
 

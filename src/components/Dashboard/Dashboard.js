@@ -1,5 +1,6 @@
 import "./Dashboard.css";
 import { useEffect } from "react";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -10,11 +11,16 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="dashboard-page">
+    <Container className="dashboard-page">
       <Navbar />
-      <h2>HOME PAGE</h2>
+      <Row>
+        <Col>
+          <h2>THIS IS A STARTER WEBSITE</h2>
+          <p>CALABLE FEATURES</p>
+        </Col>
+      </Row>
       <Footer />
-    </div>
+    </Container>
   );
 };
 
